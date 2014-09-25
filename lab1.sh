@@ -42,6 +42,29 @@ echo "shows that the new directory exists."
 mkdir home/otacon424/Documents/cscd240/
 ls -ld cscd240
 
+echo "5) Create another subdirectory inside cscd240 that is named lab1."
+echo "Capture the command that created the directory and the output of an"
+echo "ls command that shows that the new directory exists. NOTE: The "
+echo "creation of the directory lab1 must bemade from /home/yourhomedirectory."
+
+mkdir /home/otacon424/lab1
+ls -ld /home/otacon424/lab1
+
+echo "6) With the home directory still as your current working directory, capture"
+echo "the command that copies the .bashrc file from your home directory"
+echo "to a file called copy.bashrc in the lab1 directory."
+
+cp /home/otacon424/.bashrc /home/otacon424/cscd240/lab1/copy.bashrc
+ls -ld /home/otacon424/cscd240/lab1/copy.bashrc
+
+echo "7) Within the home directory, capture a detailed listing of all the"
+echo "files in the lab1 directory."
+
+ls -ld /home/otacon424/cscd240/lab1
+
+echo "8) Change to the lab1 directory capture the change directory command and"
+echo "capture a command that renames the copy .bashrc in lab1 to my.copy.bashrc."
+
 
 
 
