@@ -23,6 +23,26 @@ echo "3) Capture the command and a detailed listing of the file properties of th
 echo "file in your home directory. Add a comment below this capture that explains all the"
 echo "file properties of .bashsrc"
 
+ls -ld .bashrc
+
+#The result of the command is owner: has read and write permission
+#			      user: has read permissions
+#                             other: has read permissions
+
+echo "The result of the command is owner: has read and write permission"
+echo "				   user: has read permissions"
+echo "				   other: has read permissions"
+echo "Also give the date and time which the file was created and who the owner"
+echo "of the file"
+
+echo "4) Create a subdirectory called cscd240 in your home directory. Capture the"
+echo "command that created the directory and the output of an ls command that"
+echo "shows that the new directory exists."
+
+mkdir home/otacon424/Documents/cscd240/
+ls -ld cscd240
+
+
 
 
 #Ending script
