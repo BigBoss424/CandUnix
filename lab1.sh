@@ -153,15 +153,45 @@ b. Explained what happened"
 
 #Question 17
 
+echo "Capture the df command
+a. What is the purpose of the df command?
+b. Capture the df command that allows the output in human readable format"
+
 #Question 18
+
+echo ". Change directory into your lab1 directory again, make a new file called rules.log. Then using 
+‘ls –al’ to find the permission for this rules.log file. Explain the permission of this file for the 
+owner, group and other users in the system. Find which group does your account belongs to? 
+Capture all above activity and results in your terminal."
 
 #Question 19
 
+echo "Change directory into lab1 directory, and make a new subdirectory named test_code. 
+a. Using cd .. to go into lab1’s parent directory. Then capture the results of making a copy 
+of lab1 directory, including all its subdirectories, named as lab1.copy.
+b. Go into lab1.copy and run command rm *, explain what you get after run this command.
+"
+
 #Question 20
+
+echo ". Make a new command dir that is equivalent to linux command ‘ls –alh’, when type dir in your 
+terminal, the shell will actually run ‘ls –alh’. Capture the command that can achieve that and the 
+results.
+"
 
 #Question 21
 
+echo "We like to get a warning or prompt information before we delete the rules.log file in lab1 folder. 
+Find out that command and capture the results.
+"
+
 #Question 22
+
+echo "With your regular account, change directory to /usr directory and try to create a new folder called 
+junk. Are you able to create this new folder? Capture the command and the execution results.
+Explain Why or Why not successful?
+"
+
 
 #Ending script
 echo "End script"
