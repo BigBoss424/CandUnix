@@ -106,7 +106,62 @@ echo "Why or why not?"
 
 rmdir /home/otacon424/cscd240/lab1
 
-echo "This does not delete the directory due to the fact the option"
+echo "This does not delete the directory due to the error of "
+
+#Question number 14
+echo "Change directory so you are working from within the lab1 directory."
+echo "Once in the directory:"
+echo "	a. Capture the command that will create 6 files using the touch command. The files will be 
+named test, test1, test21, test3, something, nothing."
+echo "	b. Capture the use NANO to add text to the file test1. ( hint: nano file_name )
+"
+echo "	c. Capture the long listing of test1 to show the size changed."
+
+echo "Changing directory to lab1"
+
+cd /home/otacon424/cscd240/lab1
+
+echo "Proving that lab1 is the working directory"
+
+pwd
+
+echo "Proceeding with step A"
+touch test test1 test21 test3 something nothing
+
+echo "Proceeding with step B"
+nano test1
+
+echo "Proceeding with step C"
+ls -ld test1
+
+#Question 15
+
+echo "Capture the command to create a tar file named files.tgz that contains all the files from #14. 
+Capture the ls command to show the tar file was created. (Hint tar command)"
+
+echo "Creating tar file in file name files.tgz"
+tar -cvf files.tgz /home/otacon424/cscd240/lab1/
+
+echo "Confirming that the tar file was created"
+ls -ld /home/otacon424/cscd240/lab1
+
+#Question 16
+
+echo "Capture the command echo $PS1.
+a. Capture the command PS1=”prompt : ”
+b. Explained what happened"
+
+#Question 17
+
+#Question 18
+
+#Question 19
+
+#Question 20
+
+#Question 21
+
+#Question 22
 
 #Ending script
 echo "End script"
