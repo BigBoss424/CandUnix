@@ -65,8 +65,48 @@ ls -ld /home/otacon424/cscd240/lab1
 echo "8) Change to the lab1 directory capture the change directory command and"
 echo "capture a command that renames the copy .bashrc in lab1 to my.copy.bashrc."
 
+cd /home/otacon424/cscd240/lab1
 
+#This command should be sufficient enough to be a capture. Note otherwise and 
+#I can change it in the future.
 
+echo "9) Capture a detailed listing of all the files in the lab1 directory."
+
+ls -ld /home/otacon424/cscd240/lab1/
+
+echo "10) Starting in your lab1 directory, capture a command that uses a"
+echo "relative pathname to make cscd240 the current working directory."
+
+cd /home/otacon424/cscd240
+
+echo "11) Use the pwd command to indicate the current working directory."
+
+pwd
+
+echo "12) Starting in /usr/bin, (you will have to change to /usr/bin) (Prove"
+echo "you are in /usr/bin with pwd) capture the command using an absolute path"
+echo "that will make your home directory the current working directory. Prove"
+echo "the directory change with pwd."
+
+echo "Starting the directory in /usr/bin"
+cd /usr/bin
+
+echo "Proving that the change of directory"
+pwd
+
+echo "Changing Directories to the home directory"
+cd /home/otacon424/
+
+echo "Proving that the current working directory is the home directory"
+pwd
+
+echo "Capture the command and output using rmdir (with no other commands)"
+echo "to delete the lab1 subdirectory. Does it delete the directory?"
+echo "Why or why not?"
+
+rmdir /home/otacon424/cscd240/lab1
+
+echo "This does not delete the directory due to the fact the option"
 
 #Ending script
 echo "End script"
