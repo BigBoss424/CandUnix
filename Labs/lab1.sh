@@ -192,18 +192,45 @@ echo "Changing directory back to the lab1 directory"
 cd /home/cscd240/lab1/
 
 echo "Creating the new file rules.log"
-sudo nano rules.log
+sudo touch rules.log
 
 echo "Running the command ls -al to find the permissions of the file rules.log"
 ls -al
 
-echo ""
+echo "The owner has read write and executable permissions while the users have"
+echo "read and write permissions while the other users have only the read ability."
+echo "I am the owner of this file since I created it."
+
 #Question 19
 
 echo "Change directory into lab1 directory, and make a new subdirectory named test_code. 
 a. Using cd .. to go into lab1’s parent directory. Then capture the results of making a copy 
 of lab1 directory, including all its subdirectories, named as lab1.copy.
 b. Go into lab1.copy and run command rm *, explain what you get after run this command."
+
+echo "Changing Directory to the lab1 directory"
+
+cd /home/otacon424/cscd240/lab1/
+
+echo "Creating new subdirectory called test_code."
+
+mkdir test_code
+
+echo "Changing Directory back to lab1"
+
+cd ..
+
+echo "Copying the contents of lab1 into lab1.copy"
+
+cp /home/otacon424/cscd240/lab1 /home/otacon424/cscd240/lab1.copy
+
+echo "Changing directory to the lab1.copy"
+cd /home/otacon424/cscd240/lab1.copy
+
+echo "Running the rm * to delete the contents of the lab1.copy folder."
+rm *
+
+echo "The result of running this command is"
 
 #Question 20
 
