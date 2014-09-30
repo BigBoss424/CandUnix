@@ -151,11 +151,35 @@ echo "Capture the command echo $PS1.
 a. Capture the command PS1=”prompt : ”
 b. Explained what happened"
 
+echo "Running command echo $PS1"
+
+echo $PS1 
+
+#Explain this command properly 
+echo "What happened was that it showcased the process of PS1" 
+
+echo "Running $PS1=prompt:"
+
+PS1 = "prompt: "
+
+echo "What happened in this command was that it simply asked us to enter in a command into the bash terminal via prompt: command."
+
+
 #Question 17
 
 echo "Capture the df command
 a. What is the purpose of the df command?
 b. Capture the df command that allows the output in human readable format"
+
+echo "Running the df command"
+
+df
+
+echo "The df command simply reports the file system disk space usage."
+
+echo "Running the df command with the human readable option added."
+
+df -h
 
 #Question 18
 
@@ -164,17 +188,26 @@ echo ". Change directory into your lab1 directory again, make a new file called 
 owner, group and other users in the system. Find which group does your account belongs to? 
 Capture all above activity and results in your terminal."
 
+echo "Changing directory back to the lab1 directory"
+cd /home/cscd240/lab1/
+
+echo "Creating the new file rules.log"
+sudo nano rules.log
+
+echo "Running the command ls -al to find the permissions of the file rules.log"
+ls -al
+
+echo ""
 #Question 19
 
 echo "Change directory into lab1 directory, and make a new subdirectory named test_code. 
 a. Using cd .. to go into lab1’s parent directory. Then capture the results of making a copy 
 of lab1 directory, including all its subdirectories, named as lab1.copy.
-b. Go into lab1.copy and run command rm *, explain what you get after run this command.
-"
+b. Go into lab1.copy and run command rm *, explain what you get after run this command."
 
 #Question 20
 
-echo ". Make a new command dir that is equivalent to linux command ‘ls –alh’, when type dir in your 
+echo "Make a new command dir that is equivalent to linux command ‘ls –alh’, when type dir in your 
 terminal, the shell will actually run ‘ls –alh’. Capture the command that can achieve that and the 
 results.
 "
