@@ -3,7 +3,7 @@
 
 #Running the various commands
 echo "1) Capture the reuslts of the uname -a command. What is the purpose of the uname command?"
-echo  "How did you find information on the uname command?\n"
+echo  "How did you find information on the uname command?"
 uname -a
 
 echo "The purpose of the uname command is to print system information on a given machine." 
