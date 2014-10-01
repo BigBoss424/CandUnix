@@ -3,7 +3,7 @@
 
 #Running the various commands
 echo "1) Capture the reuslts of the uname -a command. What is the purpose of the uname command?"
-echo  "How did you find information on the uname command?"
+echo  "How did you find information on the uname command?\n"
 uname -a
 
 echo "The purpose of the uname command is to print system information on a given machine." 
@@ -39,7 +39,9 @@ echo "4) Create a subdirectory called cscd240 in your home directory. Capture th
 echo "command that created the directory and the output of an ls command that"
 echo "shows that the new directory exists."
 
-mkdir home/otacon424/Documents/cscd240/
+echo "Creating directory cscd240"
+
+mkdir home/otacon424/cscd240/
 ls -ld cscd240
 
 echo "5) Create another subdirectory inside cscd240 that is named lab1."
@@ -47,8 +49,8 @@ echo "Capture the command that created the directory and the output of an"
 echo "ls command that shows that the new directory exists. NOTE: The "
 echo "creation of the directory lab1 must bemade from /home/yourhomedirectory."
 
-mkdir /home/otacon424/lab1
-ls -ld /home/otacon424/lab1
+mkdir /home/otacon424/cscd240/lab1
+ls -ld /home/otacon424/cscd240/lab1
 
 echo "6) With the home directory still as your current working directory, capture"
 echo "the command that copies the .bashrc file from your home directory"
