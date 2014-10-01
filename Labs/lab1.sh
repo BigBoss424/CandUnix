@@ -237,13 +237,30 @@ echo "The result of running this command is"
 echo "Make a new command dir that is equivalent to linux command ‘ls –alh’, when type dir in your 
 terminal, the shell will actually run ‘ls –alh’. Capture the command that can achieve that and the 
 results.
-"
+
+echo "Creating a new command call dir using the alias command"
+alias dir = "ls -alh"
+
+echo  "Running command dir"
+dir
+
 
 #Question 21
 
 echo "We like to get a warning or prompt information before we delete the rules.log file in lab1 folder. 
 Find out that command and capture the results.
 "
+
+echo "Switching Directory to lab1"
+
+cd /home/otacon424/cscd240/lab1
+
+echo "Removing file rules.log with prompt"
+rm -i rules.log
+
+echo "Capturing result"
+pwd
+
 
 #Question 22
 
@@ -252,6 +269,16 @@ junk. Are you able to create this new folder? Capture the command and the execut
 Explain Why or Why not successful?
 "
 
+echo "Changing directory to /usr directory"
+cd /usr/
+
+echo "Creating new directory in /usr/ called junk"
+mkdir junk
+
+echo "The error ran in here is that I can't edit the contents in this file"
+echo "Due my user account not having the privelege due to the permissions set"
+echo "on /usr/ directory, however if I were to sudo it or switch to root I could"
+echo "edit the contents of the /usr/ directory."
 
 #Ending script
 echo "End script"
