@@ -41,7 +41,7 @@ echo "shows that the new directory exists."
 
 echo "Creating directory cscd240"
 
-mkdir home/EASTERN/ajones77/cscd240/
+mkdir /home/EASTERN/ajones77/cscd240/
 ls -ld cscd240
 
 echo "5) Create another subdirectory inside cscd240 that is named lab1."
@@ -112,7 +112,7 @@ echo "This does not delete the directory due to the error of the folder not"
 echo "Being empty"
 
 #Question number 14
-echo "Change directory so you are working from within the lab1 directory."
+echo "14) Change directory so you are working from within the lab1 directory."
 echo "Once in the directory:"
 echo "	a. Capture the command that will create 6 files using the touch command. The files will be" 
 echo "named test, test1, test21, test3, something, nothing."
@@ -138,7 +138,7 @@ ls -ld test1
 
 #Question 15
 
-echo "Capture the command to create a tar file named files.tgz that contains all the files from #14." 
+echo "15) Capture the command to create a tar file named files.tgz that contains all the files from #14." 
 echo "Capture the ls command to show the tar file was created. (Hint tar command)"
 
 echo "Creating tar file in file name files.tgz"
@@ -149,7 +149,7 @@ ls -ld /home/EASTERN/ajones77/cscd240/lab1
 
 #Question 16
 
-echo "Capture the command echo $PS1. "
+echo "16) Capture the command echo $PS1. "
 echo "a. Capture the command PS1=”prompt :"
 echo "b. Explained what happened"
 
@@ -169,7 +169,7 @@ echo "What happened in this command was that it simply asked us to enter in a co
 
 #Question 17
 
-echo "Capture the df command"
+echo "17) Capture the df command"
 echo "a. What is the purpose of the df command?"
 echo "b. Capture the df command that allows the output in human readable format"
 
@@ -185,7 +185,7 @@ df -h
 
 #Question 18
 
-echo ". Change directory into your lab1 directory again, make a new file called rules.log. Then using" 
+echo "18) Change directory into your lab1 directory again, make a new file called rules.log. Then using" 
 echo "‘ls –al’ to find the permission for this rules.log file. Explain the permission of this file for the" 
 echo "owner, group and other users in the system. Find which group does your account belongs to?" 
 echo "Capture all above activity and results in your terminal."
@@ -194,7 +194,7 @@ echo "Changing directory back to the lab1 directory"
 cd /home/EASTERN/ajones77/cscd240/lab1/
 
 echo "Creating the new file rules.log"
-sudo touch rules.log
+touch rules.log
 
 echo "Running the command ls -al to find the permissions of the file rules.log"
 ls -al
@@ -205,7 +205,7 @@ echo "I am the owner of this file since I created it."
 
 #Question 19
 
-echo "Change directory into lab1 directory, and make a new subdirectory named test_code." 
+echo "19) Change directory into lab1 directory, and make a new subdirectory named test_code." 
 echo "a. Using cd .. to go into lab1’s parent directory. Then capture the results of making a copy" 
 echo "of lab1 directory, including all its subdirectories, named as lab1.copy."
 echo "b. Go into lab1.copy and run command rm *, explain what you get after run this command."
@@ -236,7 +236,7 @@ echo "The result of running this command is"
 
 #Question 20
 
-echo "Make a new command dir that is equivalent to linux command ‘ls –alh’, when type dir in your" 
+echo "20) Make a new command dir that is equivalent to linux command ‘ls –alh’, when type dir in your" 
 echo "terminal, the shell will actually run ‘ls –alh’. Capture the command that can achieve that and the" 
 echo "results."
 
@@ -249,7 +249,7 @@ dir
 
 #Question 21
 
-echo "We like to get a warning or prompt information before we delete the rules.log file in lab1 folder." 
+echo "21) We like to get a warning or prompt information before we delete the rules.log file in lab1 folder." 
 echo "Find out that command and capture the results."
 
 echo "Switching Directory to lab1"
@@ -260,12 +260,12 @@ echo "Removing file rules.log with prompt"
 rm -i rules.log
 
 echo "Capturing result"
-pwd
+ls -al
 
 
 #Question 22
 
-echo "With your regular account, change directory to /usr directory and try to create a new folder called" 
+echo "22) With your regular account, change directory to /usr directory and try to create a new folder called" 
 echo "junk. Are you able to create this new folder? Capture the command and the execution results."
 echo "Explain Why or Why not successful?"
 
@@ -275,7 +275,7 @@ cd /usr/
 echo "Creating new directory in /usr/ called junk"
 mkdir junk
 
-echo "The error ran in here is that I can't edit the contents in this file"
+echo "Answer: The error ran in here is that I can't edit the contents in this file"
 echo "Due my user account not having the privelege due to the permissions set"
 echo "on /usr/ directory, however if I were to sudo it or switch to root I could"
 echo "edit the contents of the /usr/ directory."
