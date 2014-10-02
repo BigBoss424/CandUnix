@@ -2,7 +2,7 @@
 
 
 #Running the various commands
-echo "1) Capture the reuslts of the uname -a command. What is the purpose of the uname command?"
+echo -e "1) Capture the reuslts of the uname -a command. What is the purpose of the uname command?"
 echo  "How did you find information on the uname command?"
 uname -a
 
@@ -162,7 +162,7 @@ echo "What happened was that it showcased the process of PS1"
 
 echo "Running $PS1=prompt:"
 
-PS1 = "prompt: "
+PS1=\"prompt:\" 
 
 echo "What happened in this command was that it simply asked us to enter in a command into the bash terminal via prompt: command."
 
@@ -241,7 +241,7 @@ echo "terminal, the shell will actually run ‘ls –alh’. Capture the command
 echo "results."
 
 echo "Creating a new command call dir using the alias command"
-alias dir ='ls -alh'
+alias dir=ls -alh
 
 echo  "Running command dir"
 dir
