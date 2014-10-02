@@ -41,7 +41,7 @@ echo "shows that the new directory exists."
 
 echo "Creating directory cscd240"
 
-mkdir home/otacon424/cscd240/
+mkdir home/EASTERN/ajones77/cscd240/
 ls -ld cscd240
 
 echo "5) Create another subdirectory inside cscd240 that is named lab1."
@@ -49,37 +49,37 @@ echo "Capture the command that created the directory and the output of an"
 echo "ls command that shows that the new directory exists. NOTE: The "
 echo "creation of the directory lab1 must bemade from /home/yourhomedirectory."
 
-mkdir /home/otacon424/cscd240/lab1
-ls -ld /home/otacon424/cscd240/lab1
+mkdir /home/EASTERN/ajones77/cscd240/lab1
+ls -ld /home/EASTERN/ajones77/cscd240/lab1
 
 echo "6) With the home directory still as your current working directory, capture"
 echo "the command that copies the .bashrc file from your home directory"
 echo "to a file called copy.bashrc in the lab1 directory."
 
-cp /home/otacon424/.bashrc /home/otacon424/cscd240/lab1/copy.bashrc
-ls -ld /home/otacon424/cscd240/lab1/copy.bashrc
+cp /home/EASTERN/ajones77/.bashrc /home/EASTERN/ajones77/cscd240/lab1/copy.bashrc
+ls -ld /home/EASTERN/ajones77/cscd240/lab1/copy.bashrc
 
 echo "7) Within the home directory, capture a detailed listing of all the"
 echo "files in the lab1 directory."
 
-ls -ld /home/otacon424/cscd240/lab1
+ls -ld /home/EASTERN/ajones77/cscd240/lab1
 
 echo "8) Change to the lab1 directory capture the change directory command and"
 echo "capture a command that renames the copy .bashrc in lab1 to my.copy.bashrc."
 
-cd /home/otacon424/cscd240/lab1
+cd /home/EASTERN/ajones77/cscd240/lab1
 
 #This command should be sufficient enough to be a capture. Note otherwise and 
 #I can change it in the future.
 
 echo "9) Capture a detailed listing of all the files in the lab1 directory."
 
-ls -ld /home/otacon424/cscd240/lab1/
+ls -ld /home/EASTERN/ajones77/cscd240/lab1/
 
 echo "10) Starting in your lab1 directory, capture a command that uses a"
 echo "relative pathname to make cscd240 the current working directory."
 
-cd /home/otacon424/cscd240
+cd /home/EASTERN/ajones77/cscd240
 
 echo "11) Use the pwd command to indicate the current working directory."
 
@@ -97,7 +97,7 @@ echo "Proving that the change of directory"
 pwd
 
 echo "Changing Directories to the home directory"
-cd /home/otacon424/
+cd /home/EASTERN/ajones77/
 
 echo "Proving that the current working directory is the home directory"
 pwd
@@ -106,22 +106,22 @@ echo "Capture the command and output using rmdir (with no other commands)"
 echo "to delete the lab1 subdirectory. Does it delete the directory?"
 echo "Why or why not?"
 
-rmdir /home/otacon424/cscd240/lab1
+rmdir /home/EASTERN/ajones77/cscd240/lab1
 
-echo "This does not delete the directory due to the error of "
+echo "This does not delete the directory due to the error of the folder not"
+echo "Being empty"
 
 #Question number 14
 echo "Change directory so you are working from within the lab1 directory."
 echo "Once in the directory:"
-echo "	a. Capture the command that will create 6 files using the touch command. The files will be 
-named test, test1, test21, test3, something, nothing."
-echo "	b. Capture the use NANO to add text to the file test1. ( hint: nano file_name )
-"
+echo "	a. Capture the command that will create 6 files using the touch command. The files will be" 
+echo "named test, test1, test21, test3, something, nothing."
+echo "	b. Capture the use NANO to add text to the file test1. ( hint: nano file_name )"
 echo "	c. Capture the long listing of test1 to show the size changed."
 
 echo "Changing directory to lab1"
 
-cd /home/otacon424/cscd240/lab1
+cd /home/EASTERN/ajones77/cscd240/lab1
 
 echo "Proving that lab1 is the working directory"
 
@@ -138,20 +138,20 @@ ls -ld test1
 
 #Question 15
 
-echo "Capture the command to create a tar file named files.tgz that contains all the files from #14. 
-Capture the ls command to show the tar file was created. (Hint tar command)"
+echo "Capture the command to create a tar file named files.tgz that contains all the files from #14." 
+echo "Capture the ls command to show the tar file was created. (Hint tar command)"
 
 echo "Creating tar file in file name files.tgz"
-tar -cvf files.tgz /home/otacon424/cscd240/lab1/
+tar -cvf files.tgz /home/EASTERN/ajones77/cscd240/lab1/
 
 echo "Confirming that the tar file was created"
-ls -ld /home/otacon424/cscd240/lab1
+ls -ld /home/EASTERN/ajones77/cscd240/lab1
 
 #Question 16
 
-echo "Capture the command echo $PS1.
-a. Capture the command PS1=”prompt : ”
-b. Explained what happened"
+echo "Capture the command echo $PS1. "
+echo "a. Capture the command PS1=”prompt :"
+echo "b. Explained what happened"
 
 echo "Running command echo $PS1"
 
@@ -169,9 +169,9 @@ echo "What happened in this command was that it simply asked us to enter in a co
 
 #Question 17
 
-echo "Capture the df command
-a. What is the purpose of the df command?
-b. Capture the df command that allows the output in human readable format"
+echo "Capture the df command"
+echo "a. What is the purpose of the df command?"
+echo "b. Capture the df command that allows the output in human readable format"
 
 echo "Running the df command"
 
@@ -185,13 +185,13 @@ df -h
 
 #Question 18
 
-echo ". Change directory into your lab1 directory again, make a new file called rules.log. Then using 
-‘ls –al’ to find the permission for this rules.log file. Explain the permission of this file for the 
-owner, group and other users in the system. Find which group does your account belongs to? 
-Capture all above activity and results in your terminal."
+echo ". Change directory into your lab1 directory again, make a new file called rules.log. Then using" 
+echo "‘ls –al’ to find the permission for this rules.log file. Explain the permission of this file for the" 
+echo "owner, group and other users in the system. Find which group does your account belongs to?" 
+echo "Capture all above activity and results in your terminal."
 
 echo "Changing directory back to the lab1 directory"
-cd /home/cscd240/lab1/
+cd /home/EASTERN/ajones77/cscd240/lab1/
 
 echo "Creating the new file rules.log"
 sudo touch rules.log
@@ -205,14 +205,14 @@ echo "I am the owner of this file since I created it."
 
 #Question 19
 
-echo "Change directory into lab1 directory, and make a new subdirectory named test_code. 
-a. Using cd .. to go into lab1’s parent directory. Then capture the results of making a copy 
-of lab1 directory, including all its subdirectories, named as lab1.copy.
-b. Go into lab1.copy and run command rm *, explain what you get after run this command."
+echo "Change directory into lab1 directory, and make a new subdirectory named test_code." 
+echo "a. Using cd .. to go into lab1’s parent directory. Then capture the results of making a copy" 
+echo "of lab1 directory, including all its subdirectories, named as lab1.copy."
+echo "b. Go into lab1.copy and run command rm *, explain what you get after run this command."
 
 echo "Changing Directory to the lab1 directory"
 
-cd /home/otacon424/cscd240/lab1/
+cd /home/EASTERN/ajones77/cscd240/lab1/
 
 echo "Creating new subdirectory called test_code."
 
@@ -224,7 +224,7 @@ cd ..
 
 echo "Copying the contents of lab1 into lab1.copy"
 
-cp /home/otacon424/cscd240/lab1 /home/otacon424/cscd240/lab1.copy
+cp /home/EASTERN/ajones77/cscd240/lab1 /home/EASTERN/ajones77/cscd240/lab1.copy
 
 echo "Changing directory to the lab1.copy"
 cd /home/otacon424/cscd240/lab1.copy
@@ -236,9 +236,9 @@ echo "The result of running this command is"
 
 #Question 20
 
-echo "Make a new command dir that is equivalent to linux command ‘ls –alh’, when type dir in your 
-terminal, the shell will actually run ‘ls –alh’. Capture the command that can achieve that and the 
-results.
+echo "Make a new command dir that is equivalent to linux command ‘ls –alh’, when type dir in your" 
+echo "terminal, the shell will actually run ‘ls –alh’. Capture the command that can achieve that and the" 
+echo "results."
 
 echo "Creating a new command call dir using the alias command"
 alias dir = "ls -alh"
@@ -249,13 +249,12 @@ dir
 
 #Question 21
 
-echo "We like to get a warning or prompt information before we delete the rules.log file in lab1 folder. 
-Find out that command and capture the results.
-"
+echo "We like to get a warning or prompt information before we delete the rules.log file in lab1 folder." 
+echo "Find out that command and capture the results."
 
 echo "Switching Directory to lab1"
 
-cd /home/otacon424/cscd240/lab1
+cd /home/EASTERN/ajones77/cscd240/lab1
 
 echo "Removing file rules.log with prompt"
 rm -i rules.log
@@ -266,10 +265,9 @@ pwd
 
 #Question 22
 
-echo "With your regular account, change directory to /usr directory and try to create a new folder called 
-junk. Are you able to create this new folder? Capture the command and the execution results.
-Explain Why or Why not successful?
-"
+echo "With your regular account, change directory to /usr directory and try to create a new folder called" 
+echo "junk. Are you able to create this new folder? Capture the command and the execution results."
+echo "Explain Why or Why not successful?"
 
 echo "Changing directory to /usr directory"
 cd /usr/
