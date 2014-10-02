@@ -241,7 +241,7 @@ echo "terminal, the shell will actually run ‘ls –alh’. Capture the command
 echo "results."
 
 echo "Creating a new command call dir using the alias command"
-alias dir = "ls -alh"
+alias dir ='ls -alh'
 
 echo  "Running command dir"
 dir
