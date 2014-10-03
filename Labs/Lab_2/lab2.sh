@@ -21,6 +21,7 @@ echo "runs, at ajones061392@gmail.com."
 echo -e "\n"
 echo "========================================================================"
 
+#Question 1: Clearly explain why programs should be placed in /bin or /usr/bin.
 echo -e "\n"
 echo "========================================================================"
 echo "1. Clearly explain why programs should be placed in /bin or /usr/bin"
@@ -28,8 +29,14 @@ echo "========================================================================"
 echo -e "\n"
 
 echo "========================================================================"
-echo "Answer: "
+echo "Answer: /bin and /usr/bin by default is added in PATH, which is a"
+echo "environment variable specifies a list of directories the shell searches"
+echo "for the commands."
 echo "========================================================================"
+
+#Question 2: You are asked to use a program named mystery which you have never
+#used before. Explain how you would find information on the program and what it
+#does. List all the ways you know."
 
 echo -e "\n"
 echo "========================================================================"
@@ -43,6 +50,9 @@ echo "========================================================================"
 echo "Answer: "
 echo "========================================================================"
 
+#Question 3: There are many other environments variables avaible to the user.
+#Capture the printenv commnd. Describe 3 of the environment variables.
+
 echo -e "\n"
 echo "========================================================================"
 echo "3. There are many other environments variables avaible to the user. "
@@ -55,8 +65,19 @@ printenv
 
 echo -e "\n"
 echo "========================================================================"
-echo "Answer: "
+echo "Answer: The three environment variables that stood out to me were the "
+echo "following:"
+echo -e "\n"
+echo -e "\t1)LANG: This environment variable describes what language my kernel"
+echo -e "\t  is in"
+echo -e "\t2)HOME: This environment variable describes the path to my home"
+echo -e "\t  directory."
+echo -e "\t3)PWD: This environment variable describes the current directory"
+echo -e "\t  in which I'm working in."
 echo "========================================================================"
+
+#Question 4: Capture the out of the file command on the chmod executable.
+#(Where does chmod live?) Explain the information being displayed."
 
 echo -e "\n"
 echo "========================================================================"
@@ -65,4 +86,39 @@ echo "does chmod live?) Explain the information being displayed."
 echo "========================================================================"
 echo -e "\n"
 
+echo "Running the whereis command to find the chmod executable....."
+echo -e "\n"
 
+whereis chmod
+
+echo -e "\n"
+echo "========================================================================"
+echo "Answer: "
+echo "========================================================================"
+echo -e "\n"
+
+#Question 5) Capture the output of the stat command on the chmod executable.
+#Explain the information being displayed.
+
+echo "========================================================================"
+echo "5) Capture the output of the stat command on the chmod executable. "
+echo "Explain the information being displayed."
+echo "========================================================================"
+
+echo -e "\n"
+echo "Running the stat command on the chmod executable......"
+stat chmod
+
+echo -e "\n"
+
+echo "========================================================================"
+echo "Answer: "
+echo "========================================================================"
+
+echo -e "\n"
+
+echo "========================================================================"
+echo "6) Try and delete chmod. Did it delete why or why not?"
+echo "========================================================================"
+
+echo "Running the command to delete the 
