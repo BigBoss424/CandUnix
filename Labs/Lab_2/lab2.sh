@@ -46,8 +46,25 @@ echo "does. List all the ways you know."
 echo "========================================================================"
 echo -e "\n"
 
+echo "Getting information about the program mystery."
+
+echo -e "\n"
+
+echo "Way 1: Using ls -al command"
+
+ls -al
+
+echo "Way 2: Using command"
+
+head mystery
+echo "Way 3: Using command"
+
 echo "========================================================================"
-echo "Answer: "
+echo "Answer: There are three ways to figure out information on the file"
+echo "the first way is by using the command ls -al. The second way to figure it"
+echo "out is the use the nano command to figure out what's in the file."
+echo "The third way of finding more information about the mystery program by"
+echo "running the "
 echo "========================================================================"
 
 #Question 3: There are many other environments variables avaible to the user.
@@ -93,7 +110,8 @@ whereis chmod
 
 echo -e "\n"
 echo "========================================================================"
-echo "Answer: "
+echo "Answer: This command shows the location of the chmod command and it's  "
+echo "files. "
 echo "========================================================================"
 echo -e "\n"
 
@@ -122,7 +140,9 @@ echo "6) Try and delete chmod. Did it delete why or why not?"
 echo "========================================================================"
 
 echo -e "\n"
-echo "Running the command to delete the "
+echo "Running the command to delete the chmod"
+
+delete chmod
 
 echo -e "\n"
 
@@ -140,8 +160,72 @@ echo "========================================================================"
 echo -e "\n"
 
 echo "========================================================================"
-echo "8) Capture the output of the stat command on the chmod executable. "
-echo "Explain the information being displayed."
+echo "8)Capture the command to create test1, test2, test3, stu1, stu2, stu22."
+echo "========================================================================"
+
+echo -e "\n"
+
+echo "Running the command to create test1, test2, test3, test33, stu1, stu2, stu22"
+touch test1 test2 test3 test33 stu1 stu2 stu22
+
+
+echo "========================================================================"
+echo "Answer: "
+echo "========================================================================"
+
+echo -e "\n"
+
+echo "========================================================================"
+echo "9) Using meta characters and a single ls command list all files named test."
+echo "========================================================================"
+
+echo -e "\n"
+
+echo "Running the meta command ls test*"
+
+ls test*
+
+
+echo "========================================================================"
+echo "Answer: "
+echo "========================================================================"
+
+echo -e "\n"
+
+echo "========================================================================"
+echo "10) Using meta characters and a single ls command list only the files"
+echo "with the number 2 or 22 in them."
+echo "========================================================================"
+
+echo -e "\n"
+
+echo "Running meta command ls 2* "
+
+ls 2*
+
+echo "========================================================================"
+echo "Answer: "
+echo "========================================================================"
+
+echo -e "\n"
+
+echo "========================================================================"
+echo "11) Using meta characters and a single ls command list only the "
+echo "files with a single 2 not 22 in them "
+echo "========================================================================"
+
+echo -e "\n"
+
+echo "Running the meta command "
+
+echo "========================================================================"
+echo "Answer: "
+echo "========================================================================"
+
+echo -e "\n"
+
+echo "========================================================================"
+echo "12) Issue the which command on ls. Was and where was the command found?"
 echo "========================================================================"
 
 echo -e "\n"
@@ -153,8 +237,8 @@ echo "========================================================================"
 echo -e "\n"
 
 echo "========================================================================"
-echo "9) Capture the output of the stat command on the chmod executable. "
-echo "Explain the information being displayed."
+echo "13) Issue the which command on pthread.h.  Was the command found?"
+echo "If it was not found why not? How would you modify this."
 echo "========================================================================"
 
 echo -e "\n"
@@ -166,8 +250,8 @@ echo "========================================================================"
 echo -e "\n"
 
 echo "========================================================================"
-echo "10) Capture the output of the stat command on the chmod executable. "
-echo "Explain the information being displayed."
+echo "14) Using only octal values add executable access to "
+echo "test1, test2, test3."
 echo "========================================================================"
 
 echo -e "\n"
@@ -179,8 +263,8 @@ echo "========================================================================"
 echo -e "\n"
 
 echo "========================================================================"
-echo "5) Capture the output of the stat command on the chmod executable. "
-echo "Explain the information being displayed."
+echo "15) Using only alphanumeric characters remove read access from"
+echo " stu1 and stu2"
 echo "========================================================================"
 
 echo -e "\n"
@@ -192,8 +276,7 @@ echo "========================================================================"
 echo -e "\n"
 
 echo "========================================================================"
-echo "5) Capture the output of the stat command on the chmod executable. "
-echo "Explain the information being displayed."
+echo "16) Execute help set"
 echo "========================================================================"
 
 echo -e "\n"
@@ -205,8 +288,7 @@ echo "========================================================================"
 echo -e "\n"
 
 echo "========================================================================"
-echo "5) Capture the output of the stat command on the chmod executable. "
-echo "Explain the information being displayed."
+echo "17) Explain the --help option for a program"
 echo "========================================================================"
 
 echo -e "\n"
@@ -218,8 +300,8 @@ echo "========================================================================"
 echo -e "\n"
 
 echo "========================================================================"
-echo "5) Capture the output of the stat command on the chmod executable. "
-echo "Explain the information being displayed."
+echo "18) Using the man page describe what is output by the env command with"
+echo "no arguments."
 echo "========================================================================"
 
 echo -e "\n"
@@ -231,8 +313,8 @@ echo "========================================================================"
 echo -e "\n"
 
 echo "========================================================================"
-echo "5) Capture the output of the stat command on the chmod executable. "
-echo "Explain the information being displayed."
+echo "19) Show a shell command that will add the current directory to the PATH"
+echo "(without removing any existing variables from the current value of PATH.)"
 echo "========================================================================"
 
 echo -e "\n"
@@ -244,90 +326,8 @@ echo "========================================================================"
 echo -e "\n"
 
 echo "========================================================================"
-echo "5) Capture the output of the stat command on the chmod executable. "
-echo "Explain the information being displayed."
-echo "========================================================================"
-
-echo -e "\n"
-
-echo "========================================================================"
-echo "Answer: "
-echo "========================================================================"
-
-echo -e "\n"
-
-echo "========================================================================"
-echo "5) Capture the output of the stat command on the chmod executable. "
-echo "Explain the information being displayed."
-echo "========================================================================"
-
-echo -e "\n"
-
-echo "========================================================================"
-echo "Answer: "
-echo "========================================================================"
-
-echo -e "\n"
-
-echo "========================================================================"
-echo "5) Capture the output of the stat command on the chmod executable. "
-echo "Explain the information being displayed."
-echo "========================================================================"
-
-echo -e "\n"
-
-echo "========================================================================"
-echo "Answer: "
-echo "========================================================================"
-
-echo -e "\n"
-
-echo "========================================================================"
-echo "5) Capture the output of the stat command on the chmod executable. "
-echo "Explain the information being displayed."
-echo "========================================================================"
-
-echo -e "\n"
-
-echo "========================================================================"
-echo "Answer: "
-echo "========================================================================"
-
-echo -e "\n"
-
-echo "========================================================================"
-echo "5) Capture the output of the stat command on the chmod executable. "
-echo "Explain the information being displayed."
-echo "========================================================================"
-
-echo -e "\n"
-
-echo "========================================================================"
-echo "Answer: "
-echo "========================================================================"
-
-echo -e "\n"
-
-echo -e "\n"
-
-echo "========================================================================"
-echo "5) Capture the output of the stat command on the chmod executable. "
-echo "Explain the information being displayed."
-echo "========================================================================"
-
-echo -e "\n"
-
-echo "========================================================================"
-echo "Answer: "
-echo "========================================================================"
-
-echo -e "\n"
-
-echo -e "\n"
-
-echo "========================================================================"
-echo "5) Capture the output of the stat command on the chmod executable. "
-echo "Explain the information being displayed."
+echo "20) Describe what you would have to do to make a change to the"
+echo "Shell permanent."
 echo "========================================================================"
 
 echo -e "\n"
@@ -341,8 +341,8 @@ echo -e "\n"
 echo -e "\n"
 
 echo "========================================================================"
-echo "5) Capture the output of the stat command on the chmod executable. "
-echo "Explain the information being displayed."
+echo "21) Capture the output from the echo “Current time and date is"
+echo "`date`” command."
 echo "========================================================================"
 
 echo -e "\n"
@@ -356,8 +356,11 @@ echo -e "\n"
 echo -e "\n"
 
 echo "========================================================================"
-echo "5) Capture the output of the stat command on the chmod executable. "
-echo "Explain the information being displayed."
+echo "22) Issue the date command and capture its output. Now, capture the "
+echo "output from the echo 'Currenttime and date is `date`' command. Note that"
+echo "the ` character is an accent NOT an apostrophe ' . Explain why the output "
+echo "NOT an apostrophe' . Explain why the output is different in particular to"
+echo "and double quotes.  Also explain what the ` character does."
 echo "========================================================================"
 
 echo -e "\n"
@@ -371,8 +374,8 @@ echo -e "\n"
 echo -e "\n"
 
 echo "========================================================================"
-echo "5) Capture the output of the stat command on the chmod executable. "
-echo "Explain the information being displayed."
+echo "23) Create a symbolic link called almost that links to the lab1"
+echo "directory (hint ln command). Capture the output."
 echo "========================================================================"
 
 echo -e "\n"
@@ -386,7 +389,37 @@ echo -e "\n"
 echo -e "\n"
 
 echo "========================================================================"
-echo "5) Capture the output of the stat command on the chmod executable. "
+echo "24) Following #23, change to almost and capture the output."
+echo "========================================================================"
+
+echo -e "\n"
+
+echo "========================================================================"
+echo "Answer: "
+echo "========================================================================"
+
+echo -e "\n"
+
+echo -e "\n"
+
+echo "========================================================================"
+echo "25) Use "help" to get information on how to use the alias command"
+echo "a.	What information is provided in from “help”?"
+echo "b.	When should you use “help” compared to when you should use “man”?"
+echo "========================================================================"
+
+echo -e "\n"
+
+echo "========================================================================"
+echo "Answer: "
+echo "========================================================================"
+
+echo -e "\n"
+
+echo -e "\n"
+
+echo "========================================================================"
+echo "26) Capture the output of the stat command on the chmod executable. "
 echo "Explain the information being displayed."
 echo "========================================================================"
 
