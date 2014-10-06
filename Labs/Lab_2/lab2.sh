@@ -419,8 +419,8 @@ echo -e "\n"
 echo -e "\n"
 
 echo "========================================================================"
-echo "26) Capture the output of the stat command on the chmod executable. "
-echo "Explain the information being displayed."
+echo "26) Create an alias named LA that is ls –al. Capture the output and"
+echo "show it worked."
 echo "========================================================================"
 
 echo -e "\n"
@@ -434,8 +434,177 @@ echo -e "\n"
 echo -e "\n"
 
 echo "========================================================================"
-echo "5) Capture the output of the stat command on the chmod executable. "
-echo "Explain the information being displayed."
+echo "27) In #24 you issued the date command and captured the output."
+echo "Issue the date command and redirect your output to a file named date.txt."
+echo "Redirect the output of echo “Current time and date is `date`”  to date.txt"
+echo "ensuring it appends to the end of the file. "
+echo "========================================================================"
+
+echo -e "\n"
+
+echo "========================================================================"
+echo "Answer: "
+echo "========================================================================"
+
+echo -e "\n"
+
+echo -e "\n"
+
+echo "========================================================================"
+echo "28) Issue the more command or the less command on date.txt and capture"
+echo "the output. How to move to the beginning of a file in less? How to move "
+echo "to the end of file in less? How to scroll down or up? Please explain "
+echo "if you cannot capture the screen."
+echo "========================================================================"
+
+echo -e "\n"
+
+echo "========================================================================"
+echo "Answer: "
+echo "========================================================================"
+
+echo -e "\n"
+
+echo -e "\n"
+
+echo "========================================================================"
+echo "29) Capture the long listing of date.txt."
+echo "========================================================================"
+
+echo -e "\n"
+
+echo "========================================================================"
+echo "Answer: "
+echo "========================================================================"
+
+echo -e "\n"
+
+echo -e "\n"
+
+echo "========================================================================"
+echo "30) In #24 you issued the date command and captured the output."
+echo "Issue the date command and redirect your output to a file named date.txt."
+echo "Redirect the output of echo “Current time and date is `date`”  to date.txt"
+echo "ensuring it appends to the end of the file. "
+echo "========================================================================"
+
+echo -e "\n"
+
+echo "========================================================================"
+echo "Answer: "
+echo "========================================================================"
+
+echo -e "\n"
+
+echo -e "\n"
+
+echo "========================================================================"
+echo "31) In #24 you issued the date command and captured the output."
+echo "Issue the date command and redirect your output to a file named date.txt."
+echo "Redirect the output of echo “Current time and date is `date`”  to date.txt"
+echo "ensuring it appends to the end of the file. "
+echo "========================================================================"
+
+echo -e "\n"
+
+echo "========================================================================"
+echo "Answer: "
+echo "========================================================================"
+
+echo -e "\n"
+
+echo -e "\n"
+
+echo "========================================================================"
+echo "32) In #24 you issued the date command and captured the output."
+echo "Issue the date command and redirect your output to a file named date.txt."
+echo "Redirect the output of echo “Current time and date is `date`”  to date.txt"
+echo "ensuring it appends to the end of the file. "
+echo "========================================================================"
+
+echo -e "\n"
+
+echo "========================================================================"
+echo "Answer: "
+echo "========================================================================"
+
+echo -e "\n"
+
+echo -e "\n"
+
+echo "========================================================================"
+echo "33) In #24 you issued the date command and captured the output."
+echo "Issue the date command and redirect your output to a file named date.txt."
+echo "Redirect the output of echo “Current time and date is `date`”  to date.txt"
+echo "ensuring it appends to the end of the file. "
+echo "========================================================================"
+
+echo -e "\n"
+
+echo "========================================================================"
+echo "Answer: "
+echo "========================================================================"
+
+echo -e "\n"
+
+echo -e "\n"
+
+echo "========================================================================"
+echo "34) In #24 you issued the date command and captured the output."
+echo "Issue the date command and redirect your output to a file named date.txt."
+echo "Redirect the output of echo “Current time and date is `date`”  to date.txt"
+echo "ensuring it appends to the end of the file. "
+echo "========================================================================"
+
+echo -e "\n"
+
+echo "========================================================================"
+echo "Answer: "
+echo "========================================================================"
+
+echo -e "\n"
+
+echo -e "\n"
+
+echo "========================================================================"
+echo "35) In #24 you issued the date command and captured the output."
+echo "Issue the date command and redirect your output to a file named date.txt."
+echo "Redirect the output of echo “Current time and date is `date`”  to date.txt"
+echo "ensuring it appends to the end of the file. "
+echo "========================================================================"
+
+echo -e "\n"
+
+echo "========================================================================"
+echo "Answer: "
+echo "========================================================================"
+
+echo -e "\n"
+
+echo -e "\n"
+
+echo "========================================================================"
+echo "36) In #24 you issued the date command and captured the output."
+echo "Issue the date command and redirect your output to a file named date.txt."
+echo "Redirect the output of echo “Current time and date is `date`”  to date.txt"
+echo "ensuring it appends to the end of the file. "
+echo "========================================================================"
+
+echo -e "\n"
+
+echo "========================================================================"
+echo "Answer: "
+echo "========================================================================"
+
+echo -e "\n"
+
+echo -e "\n"
+
+echo "========================================================================"
+echo "37) In #24 you issued the date command and captured the output."
+echo "Issue the date command and redirect your output to a file named date.txt."
+echo "Redirect the output of echo “Current time and date is `date`”  to date.txt"
+echo "ensuring it appends to the end of the file. "
 echo "========================================================================"
 
 echo -e "\n"
