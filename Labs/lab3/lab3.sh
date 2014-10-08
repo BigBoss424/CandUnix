@@ -1,20 +1,20 @@
-#CSCD 240: C and Unix Lab 2 Script
+#CSCD 240: C and Unix Lab 3 Script
 #Created by: Aaron Jones
-#Date: 10/3/2014
+#Date: 10/8/2014
 #Description: This script will be used to run all the commands
-#in the lab 2 assignment. The question will be displayed first
+#in the lab 3 assignment. The question will be displayed first
 #followed by the command, and then followed by the answer if required.
 #Feel free to email me if you run into any issues with the way the script
 #runs, at ajones061392@gmail.com.
 
-echo "CSCD 240: C and Unix Lab 2 Script"
+echo "CSCD 240: C and Unix Lab 3 Script"
 echo -e "\n"
 echo "Created by: Aaron Jones"
-echo "Date: 10/3/2014"
+echo "Date: 10/8/2014"
 echo "========================================================================"
 echo -e "\n"
 echo "Description: This script will be used to run all the commnds"
-echo "in the lab 2 assignment. The question will be displayed first"
+echo "in the lab 3 assignment. The question will be displayed first"
 echo "followed by the command, and then followed by the answer if required."
 echo "Feel free to email me if you run into any issues with the way the script"
 echo "runs, at ajones061392@gmail.com."
