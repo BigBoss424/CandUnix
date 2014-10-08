@@ -24,31 +24,54 @@ echo "========================================================================"
 #Question 1: Clearly explain why programs should be placed in /bin or /usr/bin.
 echo -e "\n"
 echo "========================================================================"
-echo "1. Clearly explain why programs should be placed in /bin or /usr/bin"
+echo "1) Clearly explain the difference between which, grep, and find."
 echo "========================================================================"
 echo -e "\n"
 
 echo "========================================================================"
-echo "Answer: /bin and /usr/bin by default is added in PATH, which is a"
-echo "environment variable specifies a list of directories the shell searches"
-echo "for the commands."
+echo "Answer: The difference between which, grep and find are as follows:"
+echo "1) The find command locates specific files based upon recursivey descending"
+echo "the file hierarchy, by going through different categories. Such as,"
+echo "such as the name of the file, when it was created, and also by the date"
+echo "of which the file was created."
+echo "2) The grep command locates specific content of a given file. Such as a"
+echo "character phrase, a particular pattern within a given file."
+echo "3) The which command only locates a file that is in the user's path."
+echo -e "\n"
+echo "As you can see by the following details of each command there are unique"
+echo "attributes to each command. Such as find being able to locate specific"
+echo "files within specific directories compared to grep which locates specific"
+echo "patterns of characters and strings within a given file."
 echo "========================================================================"
 
-#Question 2: You are asked to use a program named mystery which you have never
-#used before. Explain how you would find information on the program and what it
-#does. List all the ways you know."
+
+#	Question #2
+#
+#	2)	Issue the find command looking for the file named ld starting at the root directory.
+#		a.	Assuming you are not logged in as root, you should get a list of errors as well as where 
+#		the file was found. Capture the output and include it in your submission – you do not need to 
+#		include all the permission errors just a few to get the idea but do include where the file was found.
+#		b.	Repeat the command (again not as root) – illustrating a method of eliminating the error messages and 
+#		printing only what was found. 
+
 
 echo -e "\n"
 echo "========================================================================"
-echo "2. You are asked to use a program named mystery which you have never used"
-echo "before. Explain how you would find information on the program and what it"
-echo "does. List all the ways you know."
+echo "2) Issue the find command looking for the file named ld starting at the root directory."
+echo "a. 	Assuming you are not logged in as root, you should get a list of errors as well as where the"
+echo "		dfile was found. Capture the output and include it in your submission – you do not need to"
+echo "		include all the permission errors just a few to get the idea but do include where the file was "
+echo "		found."
+echo "b.	Repeat the command (again not as root) – illustrating a method of eliminating the error "
+echo "		messages and printing only what was found. "
 echo "========================================================================"
 echo -e "\n"
 
-echo "Getting information about the program mystery."
+echo "Locating the file named ld starting at the root directory"
 
+find / -name ""
 echo -e "\n"
+
 
 echo "Way 1: Using ls -al command"
 
