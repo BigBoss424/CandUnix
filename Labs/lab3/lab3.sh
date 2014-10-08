@@ -83,11 +83,8 @@ find / -name "ld" > findError.txt
 
 echo "Outputting that error by the first four lines"
 
-cat -b 
-echo "Way 2: Using command"
+cat findError.txt
 
-head mystery
-echo "Way 3: Using command"
 
 echo "========================================================================"
 echo "Answer: There are three ways to figure out information on the file"
@@ -97,51 +94,43 @@ echo "The third way of finding more information about the mystery program by"
 echo "running the "
 echo "========================================================================"
 
-#Question 3: There are many other environments variables avaible to the user.
-#Capture the printenv commnd. Describe 3 of the environment variables.
+#	Question 3:
+#
+#3)	Find all files (not folders) in your home directory and its 
+#subdirectories, with size greater than 100 bytes.
 
 echo -e "\n"
 echo "========================================================================"
-echo "3. There are many other environments variables avaible to the user. "
-echo "Capture the printenv command. Describe 3 of the environment variables."
+echo "3. Find all the files (not folders) in your home directory and its"
+echo "subdirectories, with size greater than 100 bytes."
 echo "========================================================================"
 echo -e "\n"
 
-echo "Running printenv command....."
-printenv
+echo "Running the command to locate the files in my home directory and its"
+echo "subdirectories, with size greater than 100 bytes."
 
-echo -e "\n"
-echo "========================================================================"
-echo "Answer: The three environment variables that stood out to me were the "
-echo "following:"
-echo -e "\n"
-echo -e "\t1)LANG: This environment variable describes what language my kernel"
-echo -e "\t  is in"
-echo -e "\t2)HOME: This environment variable describes the path to my home"
-echo -e "\t  directory."
-echo -e "\t3)PWD: This environment variable describes the current directory"
-echo -e "\t  in which I'm working in."
-echo "========================================================================"
+find /home/ -size +100c
 
 #Question 4: Capture the out of the file command on the chmod executable.
 #(Where does chmod live?) Explain the information being displayed."
 
 echo -e "\n"
 echo "========================================================================"
-echo "4) Capture the out of the file command on the chmod executable. (Where"
-echo "does chmod live?) Explain the information being displayed."
+echo "4) In class we talked about the '–name' option for the find command."
+echo "	a.	Explain how to use the size option."
+echo "	b.	Issue and capture the results of the find "
+echo "		command in your home directory that display all files"
+echo "		that are greater than 1K.  Do not display error messages."
+echo "	c.	Explain this command: find . -name "*.txt" -exec wc -l  {}   ‘;’"
+echo "	d.	Explain this command: find . -name "*.txt" -exec  rm  {}   ‘;’"
 echo "========================================================================"
 echo -e "\n"
 
-echo "Running the whereis command to find the chmod executable....."
-echo -e "\n"
-
-whereis chmod
 
 echo -e "\n"
 echo "========================================================================"
-echo "Answer: This command shows the location of the chmod command and it's  "
-echo "files. "
+echo "Answer: The answers will be listed by the following."
+echo "		  a) "
 echo "========================================================================"
 echo -e "\n"
 
