@@ -69,14 +69,21 @@ echo -e "\n"
 
 echo "Locating the file named ld starting at the root directory"
 
-find / -name ""
+find / -name "ld"
 echo -e "\n"
 
 
-echo "Way 1: Using ls -al command"
+echo "Part A"
 
-ls -al
+echo -e "\n"
 
+echo "Capturing the command of the error of trying to running that command."
+
+find / -name "ld" > findError.txt
+
+echo "Outputting that error by the first four lines"
+
+cat -b 
 echo "Way 2: Using command"
 
 head mystery
