@@ -375,30 +375,41 @@ echo "========================================================================"
 echo -e "\n"
 
 echo "========================================================================"
-echo "Answer: "
+echo "Answer: A shell variable is a set of internal variables local to the"
+echo "shell being worked in. A environment variable are variables that are"
+echo "defined in the shell log after exitting the shell."
 echo "========================================================================"
 
 echo -e "\n"
 
 echo "========================================================================"
-echo "13) Issue the which command on pthread.h.  Was the command found?"
-echo "If it was not found why not? How would you modify this."
+echo "13) In the lab3 directory create the C file named lab3.c with the"
+echo "following code."
+echo "#include <stdio.h>"
+echo "{"
+echo "	printf(“Hello World\n”);"
+echo "	return 0;"
+echo "}// end main"
+echo ""
+echo ""
 echo "========================================================================"
+
+echo "For the sake of this example I will pre-write lab3.c just like question"
+echo "5"
+
+cat /home/EASTERN/ajones77/lab3/lab3.c
 
 echo -e "\n"
 
 echo "========================================================================"
-echo "Answer: "
+echo "14) Give the grep command that will start in your home directory and show"
+echo "the file names and line numbers containing the term “stdio” in all .c files"
+echo "in the home directory and all directories below the home."
 echo "========================================================================"
 
 echo -e "\n"
 
-echo "========================================================================"
-echo "14) Using only octal values add executable access to "
-echo "test1, test2, test3."
-echo "========================================================================"
-
-echo -e "\n"
+echo ""
 
 echo "========================================================================"
 echo "Answer: "
