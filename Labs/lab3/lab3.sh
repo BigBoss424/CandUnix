@@ -77,9 +77,9 @@ echo "Part A"
 
 echo -e "\n"
 
-echo "Capturing the command of the error of trying to running that command."
+echo "Capturing the command of the command above without the Permission Denied errors"
 
-find / -name "ld" > findError.txt
+find / -name "ld" | grep -v "Permission denied"
 
 echo "Outputting that error by the first four lines"
 
