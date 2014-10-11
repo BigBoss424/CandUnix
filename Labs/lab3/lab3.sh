@@ -121,7 +121,7 @@ echo "	a.	Explain how to use the size option."
 echo "	b.	Issue and capture the results of the find "
 echo "		command in your home directory that display all files"
 echo "		that are greater than 1K.  Do not display error messages."
-echo -e "	c.	Explain this command: find . -name "*.txt" -exec wc -l  {}   ‘;’"
+echo "	c.	Explain this command: find . -name "*.txt" -exec wc -l  {}   ‘;’"
 echo "	d.	Explain this command: find . -name "*.txt" -exec  rm  {}   ‘;’"
 echo "========================================================================"
 echo -e "\n"
@@ -143,8 +143,21 @@ echo "Executing part c of question 5...."
 
 echo -e "\n"
 
-echo "The co"
+echo "The first part of the command in part c searchs the current directory"
+echo "for any file with the .txt extension. The second part of the command"
+echo "doesn't execute for me. But the second part would print out the line"
+echo "numbers for the .txt files."
 
+echo -e "\n"
+
+echo "Executing part d of question 5...."
+
+echo "The first part of the command in part c searchs the current directory"
+echo "for any file with the .txt extension. The second part of the command"
+echo "doesn't execute for me. But the second part would remove {} if it were"
+echo "a file."
+
+echo -e "\n"
 
 
 
@@ -197,14 +210,6 @@ echo "cat the file named frostpoem.txt"
 
 echo "Displaying frostpoem.txt"
 cat /home/EASTERN/ajones77/Documents/CandUnix/Labs/lab3/frost.poem/
-
-echo ""
-
-echo -e "\n"
-
-echo "========================================================================"
-echo "Answer: "
-echo "========================================================================"
 
 echo -e "\n"
 
