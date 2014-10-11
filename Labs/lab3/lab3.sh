@@ -298,72 +298,78 @@ echo -e "\n"
 #Question 8
 
 echo "========================================================================"
-echo "8)Capture the command to create test1, test2, test3, stu1, stu2, stu22."
+echo "8) Using the man page for env"
+echo "a. Describe (in your own words not with captures from the man page) the"
+echo "output of env command with no arguments."
+echo -e "\n"
+echo "b. Describe the similarities and differences of printenv and env"
+echo -e "\n"
+echo "c. Capture a command other than pwd that will show your current working"
+echo "directory."
 echo "========================================================================"
 
 echo -e "\n"
 
-echo "Running the command to create test1, test2, test3, test33, stu1, stu2, stu22"
-touch test1 test2 test3 test33 stu1 stu2 stu22
+echo "Executing part a of question 8..."
 
+echo "The command env outputs the system information of the current enviroment"
+echo "with no arguments."
 
-echo "========================================================================"
-echo "Answer: "
-echo "========================================================================"
+echo -e "\n"
+
+echo "Executing part b of question 8..."
+echo "The similaties between printenv and env is that when running both without"
+echo "arguments it prints off the environment information. The differences"
+echo "between the both of them is that printenv only prints the environment"
+echo "information while env runs programs within the environment."
+
+echo -e "\n"
+echo "Executing part c of question 8..."
+
+ls -al
 
 echo -e "\n"
 
 echo "========================================================================"
-echo "9) Using meta characters and a single ls command list all files named test."
+echo "9) Capture the output of printenv in a file named penvout.txt."
 echo "========================================================================"
 
 echo -e "\n"
 
-echo "Running the meta command ls test*"
+echo "Running the meta command printenv penvout.txt"
 
-ls test*
-
-
-echo "========================================================================"
-echo "Answer: "
-echo "========================================================================"
+printenv > penvout.txt
 
 echo -e "\n"
 
 echo "========================================================================"
-echo "10) Using meta characters and a single ls command list only the files"
-echo "with the number 2 or 22 in them."
+echo "10) Capture the output of env in a file named envout.txt"
 echo "========================================================================"
 
 echo -e "\n"
 
-echo "Running meta command ls 2* "
+echo "Running meta command env > envout.txt"
 
-ls 2*
-
-echo "========================================================================"
-echo "Answer: "
-echo "========================================================================"
+env > envout.txt
 
 echo -e "\n"
 
 echo "========================================================================"
-echo "11) Using meta characters and a single ls command list only the "
-echo "files with a single 2 not 22 in them "
+echo "11) Capture the diff command, ignoring case and white space,"
+echo "on envout.txt and penvout.txt."
 echo "========================================================================"
 
 echo -e "\n"
 
-echo "Running the meta command "
+echo "Running the diff -i -w envout.txt penvout.txt"
 
-echo "========================================================================"
-echo "Answer: "
-echo "========================================================================"
+diff -i -w envout.txt penvout.txt
 
 echo -e "\n"
 
 echo "========================================================================"
-echo "12) Issue the which command on ls. Was and where was the command found?"
+echo "12) What is a shell variable and what is an environment variable in the "
+echo "bash shell?"
 echo "========================================================================"
 
 echo -e "\n"
@@ -437,313 +443,3 @@ echo "========================================================================"
 
 echo -e "\n"
 
-echo "========================================================================"
-echo "18) Using the man page describe what is output by the env command with"
-echo "no arguments."
-echo "========================================================================"
-
-echo -e "\n"
-
-echo "========================================================================"
-echo "Answer: "
-echo "========================================================================"
-
-echo -e "\n"
-
-echo "========================================================================"
-echo "19) Show a shell command that will add the current directory to the PATH"
-echo "(without removing any existing variables from the current value of PATH.)"
-echo "========================================================================"
-
-echo -e "\n"
-
-echo "========================================================================"
-echo "Answer: "
-echo "========================================================================"
-
-echo -e "\n"
-
-echo "========================================================================"
-echo "20) Describe what you would have to do to make a change to the"
-echo "Shell permanent."
-echo "========================================================================"
-
-echo -e "\n"
-
-echo "========================================================================"
-echo "Answer: "
-echo "========================================================================"
-
-echo -e "\n"
-
-echo -e "\n"
-
-echo "========================================================================"
-echo "21) Capture the output from the echo “Current time and date is"
-echo "`date`” command."
-echo "========================================================================"
-
-echo -e "\n"
-
-echo "========================================================================"
-echo "Answer: "
-echo "========================================================================"
-
-echo -e "\n"
-
-echo -e "\n"
-
-echo "========================================================================"
-echo "22) Issue the date command and capture its output. Now, capture the "
-echo "output from the echo 'Currenttime and date is `date`' command. Note that"
-echo "the ` character is an accent NOT an apostrophe ' . Explain why the output "
-echo "NOT an apostrophe' . Explain why the output is different in particular to"
-echo "and double quotes.  Also explain what the ` character does."
-echo "========================================================================"
-
-echo -e "\n"
-
-echo "========================================================================"
-echo "Answer: "
-echo "========================================================================"
-
-echo -e "\n"
-
-echo -e "\n"
-
-echo "========================================================================"
-echo "23) Create a symbolic link called almost that links to the lab1"
-echo "directory (hint ln command). Capture the output."
-echo "========================================================================"
-
-echo -e "\n"
-
-echo "========================================================================"
-echo "Answer: "
-echo "========================================================================"
-
-echo -e "\n"
-
-echo -e "\n"
-
-echo "========================================================================"
-echo "24) Following #23, change to almost and capture the output."
-echo "========================================================================"
-
-echo -e "\n"
-
-echo "========================================================================"
-echo "Answer: "
-echo "========================================================================"
-
-echo -e "\n"
-
-echo -e "\n"
-
-echo "========================================================================"
-echo "25) Use "help" to get information on how to use the alias command"
-echo "a.	What information is provided in from “help”?"
-echo "b.	When should you use “help” compared to when you should use “man”?"
-echo "========================================================================"
-
-echo -e "\n"
-
-echo "========================================================================"
-echo "Answer: "
-echo "========================================================================"
-
-echo -e "\n"
-
-echo -e "\n"
-
-echo "========================================================================"
-echo "26) Create an alias named LA that is ls –al. Capture the output and"
-echo "show it worked."
-echo "========================================================================"
-
-echo -e "\n"
-
-echo "========================================================================"
-echo "Answer: "
-echo "========================================================================"
-
-echo -e "\n"
-
-echo -e "\n"
-
-echo "========================================================================"
-echo "27) In #24 you issued the date command and captured the output."
-echo "Issue the date command and redirect your output to a file named date.txt."
-echo "Redirect the output of echo “Current time and date is `date`”  to date.txt"
-echo "ensuring it appends to the end of the file. "
-echo "========================================================================"
-
-echo -e "\n"
-
-echo "========================================================================"
-echo "Answer: "
-echo "========================================================================"
-
-echo -e "\n"
-
-echo -e "\n"
-
-echo "========================================================================"
-echo "28) Issue the more command or the less command on date.txt and capture"
-echo "the output. How to move to the beginning of a file in less? How to move "
-echo "to the end of file in less? How to scroll down or up? Please explain "
-echo "if you cannot capture the screen."
-echo "========================================================================"
-
-echo -e "\n"
-
-echo "========================================================================"
-echo "Answer: "
-echo "========================================================================"
-
-echo -e "\n"
-
-echo -e "\n"
-
-echo "========================================================================"
-echo "29) Capture the long listing of date.txt."
-echo "========================================================================"
-
-echo -e "\n"
-
-echo "========================================================================"
-echo "Answer: "
-echo "========================================================================"
-
-echo -e "\n"
-
-echo -e "\n"
-
-echo "========================================================================"
-echo "30) Modify date.txt to add executable privileges to date.txt for the owner,"
-echo "Capture the command and prove that the permissions were changed. No other"
-echo "permissions will be changed.  You must do this with the octal values."
-echo "========================================================================"
-
-echo -e "\n"
-
-echo "========================================================================"
-echo "Answer: "
-echo "========================================================================"
-
-echo -e "\n"
-
-echo -e "\n"
-
-echo "========================================================================"
-echo "31) Modify date.txt to remove w from the group. Capture the command and prove"
-echo "that the permissions were changed. No other permissions will be changed."
-echo "You must do this without using the octal values."
-echo "========================================================================"
-
-echo -e "\n"
-
-echo "========================================================================"
-echo "Answer: "
-echo "========================================================================"
-
-echo -e "\n"
-
-echo -e "\n"
-
-echo "========================================================================"
-echo "32) Capture the command echo $SHELL"
-echo "a.	What shell are you using?"
-echo "b.	Where do the “shells” live?"
-echo "c.	Capture the command to switch to a different shell"
-echo "d.	Capture the command echo $SHELL"
-echo "e.	What shell are you using? Why is the shell different than you expected?"
-echo "f.	Capture the command to leave the different shell."
-echo "========================================================================"
-
-echo -e "\n"
-
-echo "========================================================================"
-echo "Answer: "
-echo "========================================================================"
-
-echo -e "\n"
-
-echo -e "\n"
-
-echo "========================================================================"
-echo "33) Using nano to create a text file myvi.txt in your home directory."
-echo "The file myvi.txt contains the following texts."
-echo -e "\n"
-echo "I took a bus today"
-echo "Making a tour the American way "
-echo "I wondered as I was told"
-echo "========================================================================"
-
-echo -e "\n"
-
-echo "========================================================================"
-echo "Answer: "
-echo "========================================================================"
-
-echo -e "\n"
-
-echo -e "\n"
-
-echo "========================================================================"
-echo "34) Try out the command echo b{i,a,o}ke, capture the output and explain"
-echo "what does the { do?"
-echo "========================================================================"
-
-echo -e "\n"
-
-echo "========================================================================"
-echo "Answer: "
-echo "========================================================================"
-
-echo -e "\n"
-
-echo -e "\n"
-
-echo "========================================================================"
-echo "35) Explain what does the following command do? cp  ~/play/old*.mp[34]"
-echo "  /tmp/existingFolder"
-echo "========================================================================"
-
-echo -e "\n"
-
-echo "========================================================================"
-echo "Answer: "
-echo "========================================================================"
-
-echo -e "\n"
-
-echo -e "\n"
-
-echo "========================================================================"
-echo "36) Try out !! and !cd command, what do these commands do?"
-echo "========================================================================"
-
-echo -e "\n"
-
-echo "========================================================================"
-echo "Answer: "
-echo "========================================================================"
-
-echo -e "\n"
-
-echo -e "\n"
-
-echo "========================================================================"
-echo "37) Assume you have 5 files in the current working directory, Section.pdf"
-echo ", Lecture.pdf, soundecho.mp3, neck.jpg, Monday.sh. If you type in  ls "
-echo "–l [^A-P]ec*, what output you will see? Clearly explain why you see your output."
-echo "========================================================================"
-
-echo -e "\n"
-
-echo "========================================================================"
-echo "Answer: "
-echo "========================================================================"
-
-echo -e "\n"
