@@ -169,7 +169,7 @@ echo "Because it was grassy and wanted wear,"
 echo "Though as for that the passing there"
 echo "Had worn them really about the same,"
 
-echo =e "\n"
+echo -e "\n"
 
 echo "a. Use the grep command, capture both the command and the output,"
 echo "to finds all lines, including the line number, that end with a comma."
@@ -246,19 +246,36 @@ echo -e "\n"
 
 echo "Executing part b of question 6...."
 
-grep 
+grep 'I' *.poem ~/
 echo -e "\n"
 
+#Question 7
+
 echo "========================================================================"
-echo "7) Capture the output of the stat command on the chmod executable. "
-echo "Explain the information being displayed."
+echo "7) Using a text editor create a file named myScript that contains the"
+echo "following:"
+echo "#!/bin/bash"
+echo "string=”Hello World”"
+echo "echo $string"
+
+echo -e "\n"
+
+echo "a. Try to execute the script with ./myScript and capture the output."
+echo -e "\n"
+echo "b. Execute and capture the command that will change the permissions on "
+echo "myScript to be user executable without changing any other permissions."
+echo -e "\n"
+echo "c. Execute the script with ./myScript and capture the output."
 echo "========================================================================"
 
 echo -e "\n"
 
-echo "========================================================================"
-echo "Answer: "
-echo "========================================================================"
+echo "For the sake of this example I will pre-write myScript just like question"
+echo "5"
+
+cat /home/EASTERN/ajones77/Documents/CandUnix/Labs/lab3/myScript
+
+
 
 echo -e "\n"
 
