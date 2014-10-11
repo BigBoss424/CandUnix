@@ -196,7 +196,7 @@ echo "For the sake of this script I will have the file pre-written and will simp
 echo "cat the file named frostpoem.txt"
 
 echo "Displaying frostpoem.txt"
-cat /home/EASTERN/ajones77/Documents/CandUnix/Labs/lab3/frostpoem.txt/
+cat /home/EASTERN/ajones77/Documents/CandUnix/Labs/lab3/frost.poem/
 
 echo ""
 
@@ -208,15 +208,45 @@ echo "========================================================================"
 
 echo -e "\n"
 
+#Question #6
+
 echo "========================================================================"
-echo "6) Try and delete chmod. Did it delete why or why not?"
+echo "6) Capture, creating a directory named lab3."
+echo "a. Capture placing a copy of frost.poem in the directory lab3. There should"
+echo "be one copy of frost.poem in your home directory and one in lab3."
+
+echo -e "\n"
+
+echo "b. Within your home directory, capture the grep command and its output that"
+echo "will recursively find all instances of the word I (case DOES matter)"
+echo "in all files that end with .poem."
 echo "========================================================================"
 
 echo -e "\n"
-echo "Running the command to delete the chmod"
+echo "Creating a new directory named lab3"
 
-delete chmod
+mkdir lab3 /home/EASTERN/ajones77/
 
+echo "Proving that lab3 has been created"
+
+ls /home/EASTERN/ajones77/lab3
+
+#Either move into the lab3 directory and then confirm with pwd or just display with 
+#ls. Decisions....
+
+echo -e "\n"
+echo "Executing part a of question 6...."
+
+cp /home/EASTERN/ajones77/Documents/CandUnix/Labs/lab3/frost.poem /home/EASTERN/ajones77/lab3
+
+echo "Proving that frost.poem was moved..."
+find /home/EASTERN/ajones77/lab3/ -name frost.poem
+
+echo -e "\n"
+
+echo "Executing part b of question 6...."
+
+grep 
 echo -e "\n"
 
 echo "========================================================================"
