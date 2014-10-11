@@ -278,13 +278,13 @@ echo -e "\n"
 echo "For the sake of this example I will pre-write myScript just like question"
 echo "5"
 
-cat /home/EASTERN/ajones77/Documents/CandUnix/Labs/lab3/myScript.sh
+cat /home/EASTERN/ajones77/Documents/CandUnix/Labs/lab3/myScript
 
 echo -e "\n"
 
 echo "Running part a of the question 7"
 
-./home/EASTERN/ajones77/Documents/CandUnix/Labs/lab3/myScript.sh
+./home/EASTERN/ajones77/Documents/CandUnix/Labs/lab3/myScript
 
 echo -e "\n"
 
