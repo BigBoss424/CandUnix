@@ -121,30 +121,84 @@ echo "	a.	Explain how to use the size option."
 echo "	b.	Issue and capture the results of the find "
 echo "		command in your home directory that display all files"
 echo "		that are greater than 1K.  Do not display error messages."
-echo "	c.	Explain this command: find . -name "*.txt" -exec wc -l  {}   ‘;’"
+echo -e "	c.	Explain this command: find . -name "*.txt" -exec wc -l  {}   ‘;’"
 echo "	d.	Explain this command: find . -name "*.txt" -exec  rm  {}   ‘;’"
 echo "========================================================================"
 echo -e "\n"
 
+echo "Executing part a of question 4...."
 
 echo -e "\n"
-echo "========================================================================"
-echo "Answer: The answers will be listed by the following."
-echo "		  a) "
-echo "========================================================================"
+
+echo "The size option in the find command is used to search for files by the size"
+echo "of the file."
+
+echo "Executing part b of question 4...."
+
 echo -e "\n"
+
+find /home/ -size +1k | grep -v "Permission denied"
+
+echo "Executing part c of question 5...."
+
+echo -e "\n"
+
+echo "The co"
+
+
+
 
 #Question 5) Capture the output of the stat command on the chmod executable.
 #Explain the information being displayed.
 
 echo "========================================================================"
-echo "5) Capture the output of the stat command on the chmod executable. "
-echo "Explain the information being displayed."
+echo "5) Use a text editor on the remote machine to create a file named "
+echo "frost.poem that contains the following text:"
+echo "The Road Not Taken by Robert Frost"
+echo "Two roads diverged in a yellow wood,"
+echo "And sorry I could not travel both"
+echo "and be one traveler, long I stood"
+echo "And looked down one as far as I could"
+echo "To where it bent in the undergrowth;"
+
+echo -e "\n"
+
+echo "Then took the other, as just as fair,"
+echo "And having perhaps the better claim"
+echo "Because it was grassy and wanted wear,"
+echo "Though as for that the passing there"
+echo "Had worn them really about the same,"
+
+echo =e "\n"
+
+echo "a. Use the grep command, capture both the command and the output,"
+echo "to finds all lines, including the line number, that end with a comma."
+
+echo -e "\n"
+
+echo "b. Use the grep command, capture both the command and the output, to"
+echo "finds all lines, including the line number, containing the word as."
+
+echo -e "\n"
+
+echo "c. Use the grep command, capture both the command and the output,"
+echo "to finds all lines, including the line number that starts with the word"
+echo "including the line number that starts with the word and (case DOES NOT matter)."
+
+echo - e"\n"
+
+echo "d. Use the grep command, capture both the command and the output,"
+echo "including the line number that starts with the word and (case DOES matter)."
 echo "========================================================================"
 
 echo -e "\n"
-echo "Running the stat command on the chmod executable......"
-stat chmod
+echo "For the sake of this script I will have the file pre-written and will simply"
+echo "cat the file named frostpoem.txt"
+
+echo "Displaying frostpoem.txt"
+cat /home/EASTERN/ajones77/Documents/CandUnix/Labs/lab3/frostpoem.txt/
+
+echo ""
 
 echo -e "\n"
 
