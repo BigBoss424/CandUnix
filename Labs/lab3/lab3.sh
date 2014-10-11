@@ -409,48 +409,70 @@ echo "========================================================================"
 
 echo -e "\n"
 
-echo ""
+echo "Running grep and wc"
+
+grep -r -n 'stdio' ~/
+
+echo -e "\n"
 
 echo "========================================================================"
-echo "Answer: "
+echo "15) Consider the following command ls – al | less."
+echo "a. What does the command do?"
+echo -e "\n"
+echo "b. How does this command show advantages over ls –al?"
 echo "========================================================================"
 
 echo -e "\n"
 
 echo "========================================================================"
-echo "15) Using only alphanumeric characters remove read access from"
-echo " stu1 and stu2"
+echo "Answer: The following command displays the output of the command ls -al"
+echo "and the advantage of using this over simply ls -al is that it only shows"
+echo "enough information to fill the screen/shell rather than the entire output."
 echo "========================================================================"
 
 echo -e "\n"
 
 echo "========================================================================"
-echo "Answer: "
+echo "16) Redirect the output of the command ls –lah ~/.bashrc to a file"
+echo "named details.txt. "
 echo "========================================================================"
 
 echo -e "\n"
 
-echo "========================================================================"
-echo "16) Execute help set"
-echo "========================================================================"
+echo "Redirecting the output of ls -lah ~/.bashrc to a file."
+
+ls -lah ~/.bashrc > details.txt
 
 echo -e "\n"
 
 echo "========================================================================"
-echo "Answer: "
+echo "17) Write a single command that can redirect the output of command ls –l"
+echo "/bin/cp to the existing file details.txt generated in question 16,"
+echo "without overwriting the file."
 echo "========================================================================"
 
 echo -e "\n"
 
+echo "Executing the redirection of ls -l /bin/cp to details.txt"
+
+set +o noclobber | ls -l /bin/cp >> details.txt
+
 echo "========================================================================"
-echo "17) Explain the --help option for a program"
+echo "18) Provide a single command that can count how many lines of text are"
+echo "in details.txt created in question 17."
 echo "========================================================================"
 
 echo -e "\n"
 
-echo "========================================================================"
-echo "Answer: "
-echo "========================================================================"
+echo "Executing single command to count lines in details.txt"
+
+wc -l details.txt
 
 echo -e "\n"
+
+
+echo "========================================================================"
+echo "End of script...."
+echo "========================================================================"
+
 
