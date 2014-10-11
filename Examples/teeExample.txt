@@ -1,0 +1,7 @@
+stuff
+
+
+
+ls
+cd..
+q
