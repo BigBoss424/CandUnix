@@ -275,9 +275,27 @@ echo "5"
 
 cat /home/EASTERN/ajones77/Documents/CandUnix/Labs/lab3/myScript
 
+echo -e "\n"
 
+echo "Running part a of the question 7"
+
+./myScript
 
 echo -e "\n"
+
+echo "Running part b of question 7"
+
+chmod u+rwx /home/EASTERN/ajones77/Documents/CandUnix/Labs/lab3/myScript
+
+echo -e "\n"
+
+echo "Running part b of question 7"
+
+./myScript
+
+echo -e "\n"
+
+#Question 8
 
 echo "========================================================================"
 echo "8)Capture the command to create test1, test2, test3, stu1, stu2, stu22."
