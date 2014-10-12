@@ -1,0 +1,2 @@
+-rw-r--r-- 1 ajones77 IT-GenericLinuxGroup 3.1K Sep 20  2012 /home/EASTERN/ajones77/.bashrc
+-rwxr-xr-x 1 root root 126032 Nov 19  2012 /bin/cp
