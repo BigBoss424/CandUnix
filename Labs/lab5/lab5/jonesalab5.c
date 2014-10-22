@@ -29,6 +29,7 @@ int main(void)
 
 
 
+    do{
 	printf("Welcome to the Guessing game \n");
 	printf("Please enter the range greater than 99: ");
 	scanf("%d", &numrange);
@@ -37,7 +38,7 @@ int main(void)
 
 	if(numrange >= 99)
 	{
-        do{
+
             do{
                  printf("Please enter a guess between 1 and the number");
                  printf(" you entered:\n");
@@ -64,16 +65,13 @@ int main(void)
 
                 printf("\nWould you like to try again?");
                 scanf("%s", &goAgain);
+        }//end if
+        	else if(numrange < 99)
+            {
+            printf("Error your value was not that of over the value of 99");
+            printf("\nPlease enter your value again: ");
+            scanf("%d", &numrange);
+            }
 
         }while(goAgain == 'y' || goAgain == 'Y');
-	}//end if
-	else if(numrange < 99)
-	{
-	    printf("Error your value was not that of over the value of 99");
-	    printf("\nPlease enter your value again: ");
-	    scanf("%d", &numrange);
-	}
-
-
-
 }

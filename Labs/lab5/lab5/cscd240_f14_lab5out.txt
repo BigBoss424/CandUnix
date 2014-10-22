@@ -1,0 +1,105 @@
+/*
+First run 
+*/
+
+Welcome to the Guessing game 
+Please enter the range greater than 99: 100
+Please enter a guess between 1 and the number you entered:
+50
+
+Too high
+Please enter a guess between 1 and the number you entered:
+75
+
+Too high
+Please enter a guess between 1 and the number you entered:
+30
+
+Too Low
+Please enter a guess between 1 and the number you entered:
+40
+
+Too Low
+Please enter a guess between 1 and the number you entered:
+50
+
+Too high
+Please enter a guess between 1 and the number you entered:
+47
+
+Too high
+Please enter a guess between 1 and the number you entered:
+45
+
+Too high
+Please enter a guess between 1 and the number you entered:
+44
+
+Too high
+Please enter a guess between 1 and the number you entered:
+43
+
+Too high
+Please enter a guess between 1 and the number you entered:
+42
+
+You got it
+
+It only took you 10 tries!
+
+Would you like to try again?n
+
+/*Second run */
+Welcome to the Guessing game 
+Please enter the range greater than 99: 101
+Please enter a guess between 1 and the number you entered:
+32
+
+Too Low
+Please enter a guess between 1 and the number you entered:
+94
+
+Too high
+Please enter a guess between 1 and the number you entered:
+73
+
+Too Low
+Please enter a guess between 1 and the number you entered:
+85
+
+Too high
+Please enter a guess between 1 and the number you entered:
+80
+
+Too high
+Please enter a guess between 1 and the number you entered:
+77
+
+You got it
+
+It only took you 6 tries!
+
+Would you like to try again?n
+
+
+/*Third run */
+
+Welcome to the Guessing game 
+Please enter the range greater than 99: 125
+Please enter a guess between 1 and the number you entered:
+50
+
+Too high
+Please enter a guess between 1 and the number you entered:
+45
+
+Too high
+Please enter a guess between 1 and the number you entered:
+30
+
+You got it
+
+It only took you 3 tries!
+
+Would you like to try again?n
+
