@@ -4,8 +4,8 @@
 #include <fcntl.h>
 #include <stdlib.h>
 #include <unistd.h>
-#include <sys/mmap.h>
-
+#include <sys/mman.h>
+#include <string.h>
 
 //fcmtl.h
 
@@ -17,7 +17,7 @@ int main(int argc, char *argv[])
 	struct stat mystat;
 	void *pmap;
 
-	fd = open("test.txt",0_RDWR);
+	fd = open("test.txt",O_RDWR);
 	if(fd == -1)
 	{
 		perror("open");
@@ -33,7 +33,7 @@ int main(int argc, char *argv[])
 		
 	}	
 
-	pmap = nmap(0, mystat.st_size, PROT_READ | PROT_WRITE,
+	pmap = mmap(0, mystat.st_size, PROT_READ | PROT_WRITE,
 		    MAP_SHARED, fd, 0);
 
 	if(pmap == MAP_FAILED)
