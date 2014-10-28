@@ -5,7 +5,7 @@
 #include <string.h>
 #include <stdlib.h>
 
-int main(int argc, char *arg[])
+int main(int argc, char *argv[])
 {
 	/* Variables */
 	int sock; //socket
@@ -14,7 +14,7 @@ int main(int argc, char *arg[])
 	int mysock; //my socket variable
 		    //will hold my connection to the server
 
-	char buff(1024); //buffer to hold the data
+	char buff[1024]; //buffer to hold the data
 	int rval;
 	
 
@@ -56,7 +56,7 @@ int main(int argc, char *arg[])
 		else
 		{
 			memset(buff, 0, sizeof(buff));
-			if(rval == recv(mysock, buff, sizeof(buff, 0))
+			if((rval = (mysock, buff, sizeof(buff),0)) < 0)
 				perror("reading stream message error");
 			else if(rval == 0)
 				printf("Ending Connection\n");
