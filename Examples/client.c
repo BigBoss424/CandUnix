@@ -8,7 +8,8 @@
 #include <unistd.h>
 
 #define DATA "Hello World of Sockets"
-int main(int argc, char *argv[]);
+
+int main(int argc, char *argv[])
 {
 
 	/*Variable*/
@@ -17,7 +18,7 @@ int main(int argc, char *argv[]);
 	char buff[1024]; //buffer
 	struct hostent *hp;
 	/*Create socket*/
-	sock = sock(AF_INET, SOCK_STREAM, 0);
+	sock = socket(AF_INET, SOCK_STREAM, 0);
 	if(sock < 0)
 	{
 		perror("Failed to create socket!");
@@ -29,7 +30,7 @@ int main(int argc, char *argv[]);
 	
 	server.sin_family = AF_INET;
 	
-	hp = gethostbyname(*argv[1]);
+	hp = gethostbyname(argv[1]);
 	if(hp == 0)
 	{
 		perror("Failed to get host binding");
@@ -38,7 +39,7 @@ int main(int argc, char *argv[]);
 	}
 
 	memcpy(&server.sin_addr, hp->h_addr, hp->h_length);
-	server.port = htona(5000);
+	server.sin_port = htons(5000);
 
 	//connect socket
 
