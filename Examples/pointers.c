@@ -7,7 +7,7 @@ int main(int argc, char *argv[])
 
 	n = 25;
 	printf("Before manipulation with pointers \n");	
-	printf("n is: &d\n", n);
+	printf("n is: %d\n", n);
 
 	/*After manipulation with pointers*/
 	//int *k;
