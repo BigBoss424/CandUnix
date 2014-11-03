@@ -14,6 +14,9 @@ int main()
 
 
     printf("This is the value for m: %1f", pointer);
-    printf("This is the memory location for m: %1f", *pointer);
+    printf("This is the memory location for m: %1d", *pointer);
+
+
+
 
 }
