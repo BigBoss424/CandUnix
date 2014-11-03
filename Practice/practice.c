@@ -11,8 +11,9 @@ int main()
 
     m = 10;
 
-    *pointer = m;
 
-    printf("This is the value for m: %d", pointer);
+
+    printf("This is the value for m: %1f", pointer);
+    printf("This is the memory location for m: %1f", *pointer);
 
 }
