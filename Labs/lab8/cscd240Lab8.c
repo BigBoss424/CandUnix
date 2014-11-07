@@ -15,6 +15,8 @@ int main(int argc, const char*argv[])
 	grades[2] = (int*)malloc(C*sizeof(int));
 	grades[3] = (int*)malloc(C*sizeof(int));
 	grades[4] = (int*)malloc(C*sizeof(int));
+	
+
 
 	for(i = 0; i < R; i++)
 	{
@@ -23,6 +25,7 @@ int main(int argc, const char*argv[])
 			grades[i][j] = walk++;
 		}
 	}
+	
 
 	int **pptr = grades;
 	printf("-1: pptr=%p\n", pptr);
@@ -50,9 +53,9 @@ int main(int argc, const char*argv[])
 
 	printf("\n\n");
 
-	printf("3) *(pptr[1]+1) = %d\n", *(pptr[1] + 1));
-	printf("3) *(*(pptr+1)+1)  = %d\n", *(*(pptr+1)+1));
-	printf("3) pptr[1][1] = %d\n", pptr[1][1]);
+	printf("3: *(pptr[1]+1) = %d\n", *(pptr[1] + 1));
+	printf("3: *(*(pptr+1)+1)  = %d\n", *(*(pptr+1)+1));
+	printf("3: pptr[1][1] = %d\n", pptr[1][1]);
 
 	return 0;
 }//end of main
