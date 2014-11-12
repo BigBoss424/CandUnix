@@ -70,7 +70,16 @@ void strip(char * temp)
 
 }// end function strip
 
+int string_cmp(const void *a, const void *b)
+{
+	return strcmp(*(char * const *)a, *(char* const*)b);
+}
+
+
 void sort(char **names, int total)
 {
+	size_t strings_len = sizeof(names) / sizeof(char*);
+	qsort(names, strings_len, total, string_cmp);
+
 }// end sort
 
