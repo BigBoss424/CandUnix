@@ -36,7 +36,7 @@ static int compare (const void *a, const void *b)
 int main()
 {
 	int i;
-	qsort(array, n_array, sizeof(const * char), compare);
+	qsort(array, n_array, sizeof(const char *), compare);
 	for(i = 0; i < n_array; i++)
 	{
 		printf("%d: %s.\n", i, array[i]);
