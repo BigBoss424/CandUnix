@@ -13,6 +13,8 @@ int main()
     fclose(fin);
     fin = NULL;
 
+
+
     do
     {
         switch(choice = menu())
@@ -37,3 +39,53 @@ int main()
     return 0;
 
 }// end main
+
+int menu()
+{
+    int choice;
+
+	printf("1) Print the array sorted by street");
+	printf("2) Print the array sorted by city");
+	printf("3) Print the array sorted by state then city");
+	printf("4) Print the array sorted by zip");
+	printf("5) Quit");
+	scanf("%d", &choice);
+	return choice;
+}
+
+Address fillArray(int *total, FILE * fin)
+{
+    Address * newArray;
+
+    for(int i =0; i< total; i++)
+    {
+
+    }
+    return newAddress;
+}
+
+void printStreetSortedArray(Address * array, int total)
+{
+
+}//end printStreatSortedArray
+
+void printCitySortedArray(Address * array, int total)
+{
+
+}//end printCitySortedArray
+
+void printStateCitySortedArray(int total, Address * array)
+{
+
+}//end printStateCitySortedArray
+
+void printZipSortedArray(int total, Address * array)
+{
+
+}//end printZipSortedArray
+
+void cleanUp(Address * array, int total)
+{
+
+}//end cleanUp
+

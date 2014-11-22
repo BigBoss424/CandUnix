@@ -18,3 +18,4 @@ void printCitySortedArray(Address * array, int total);
 void printStateCitySortedArray(int total, Address * array);
 void printZipSortedArray(int total, Address * array);
 void cleanUp(Address * array, int total);
+
