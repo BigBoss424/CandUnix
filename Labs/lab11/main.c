@@ -60,7 +60,8 @@ int main(int argc, const char * argv[])
     removeNode(&slist, (void *)&temp[4]);
     printf("------After removed student with id = 2:------\n");
     printList(&slist);
-    
+   
+   
     printf("------Now start to free all memory!\n");
     //free the whole list
     freeList(&slist);

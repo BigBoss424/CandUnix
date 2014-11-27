@@ -118,7 +118,7 @@ List sort(List alist)
 // Please do not change the signature of this function
 int removeNode(List *alist, void *obj)
 {
-    Node *curr, *prev = alist -> head, *start = (*alist).head;
+    Node *curr = alist -> head, *prev = alist -> head, *start = (*alist).head;
     void *temp = obj;
 
     if(temp == curr)
@@ -139,7 +139,10 @@ int removeNode(List *alist, void *obj)
                 return 1;
             }
             prev = curr;
+	    
         }//end for loop
+	
     }//end else if
+    
     return 0;
 }
