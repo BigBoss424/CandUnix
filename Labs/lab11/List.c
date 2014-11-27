@@ -48,14 +48,14 @@ void printList(const List *alist)
         cur=cur->next;
     }
     printf("\n");
-    
+
 }
 
 void freeList(List *alist)
 {
     Node *cur = alist->head;
     Node *temp;
-    
+
     while (cur != NULL)
     {
         temp = cur;
@@ -68,7 +68,7 @@ void freeList(List *alist)
 List addFirst(List alist, void *toAdd)
 {
     Node *nn = newNode(toAdd);
-    
+
     if(alist.head == NULL) // or use if( ! alist.head )
     {
         alist.head = nn;
@@ -80,7 +80,7 @@ List addFirst(List alist, void *toAdd)
         alist.head = nn;
     }
     alist.size ++;
-    
+
     return alist;
 }
 
@@ -90,7 +90,7 @@ List sort(List alist)
     Node *min, *start = alist.head, *cur;
     void *temp;
     if (alist.size == 0)   return alist;
-    
+
     for(; start->next != NULL; start = start->next)
     {
         min = start;
@@ -118,10 +118,28 @@ List sort(List alist)
 // Please do not change the signature of this function
 int removeNode(List *alist, void *obj)
 {
+    Node *curr, *prev = alist -> head, *start = (*alist).head;
+    void *temp = obj;
+
+    if(temp == curr)
+    {
+        alist->head = curr->next;
+        free(curr);
+        return 1;
+    }
+
+    else if(obj != alist->head)
+    {
+        for(curr = start->next; curr !=NULL; curr = curr->next)
+        {
+            if(alist->cmpData(curr->data, temp)==0)
+            {
+                prev->next = curr->next;
+                free(curr);
+                return 1;
+            }
+            prev = curr;
+        }//end for loop
+    }//end else if
+    return 0;
 }
-
-
-
-
-
-
