@@ -1,0 +1,12 @@
+/*
+* This is the make file for lab11 *./
+
+CC = gcc
+CFLAGS = -I.
+DEPS = student.h typeUtil.h List.h
+
+%.o: %.c $(DEPS)
+	$(CC) -c -o $@ $< $(CFLAGS)
+
+lab11: student.o typeUtil.o List.o
+	gcc -o lab11 main.c student.o typeUtil.o List.o -I. 
