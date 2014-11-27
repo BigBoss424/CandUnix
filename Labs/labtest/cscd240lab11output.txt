@@ -1,0 +1,27 @@
+------Original List:------
+ID: 0, Name: hello-->
+ID: 6, Name: good-->
+ID: 5, Name: find-->
+ID: 2, Name: ele-->
+ID: 3, Name: dog-->
+ID: 4, Name: cat-->
+ID: 1, Name: band-->
+ID: 7, Name: able
+------After sorted:------
+ID: 0, Name: hello-->
+ID: 1, Name: band-->
+ID: 2, Name: ele-->
+ID: 3, Name: dog-->
+ID: 4, Name: cat-->
+ID: 5, Name: find-->
+ID: 6, Name: good-->
+ID: 7, Name: able
+------After removed student with id = 2:------
+ID: 0, Name: hello-->
+ID: 1, Name: band-->
+ID: 3, Name: dog-->
+ID: 4, Name: cat-->
+ID: 5, Name: find-->
+ID: 6, Name: good-->
+ID: 7, Name: able
+------Now start to free all memory!
