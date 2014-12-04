@@ -11,9 +11,9 @@ int Monster_attack(void *self, int damage)
 
     printf("You attack %s!\n", monster->_(description));
 
-    monster->hit_pointers -= damage;
+    monster->hit_points -= damage;
 
-    if(monster->hit_pointers > 0)
+    if(monster->hit_points > 0)
     {
         printf("It is still alive.\n");
         return 0;
@@ -28,7 +28,7 @@ int Monster_attack(void *self, int damage)
 int Monster_init(void *self)
 {
     Monster *monster = self;
-    monster->hit_pointers = 10;
+    monster->hit_points = 10;
     return 1;
 }
 
@@ -141,7 +141,7 @@ int Map_init(void *self)
 
     throne->west = arena;
     throne->east = kitchen;
-    throne->sount = hall;
+    throne->south = hall;
 
     arena->east = throne;
     kitchen->west = throne;
@@ -184,7 +184,40 @@ int process_input(Map *game)
         case 'e':
             game->_(move)(game, EAST);
             break;
-        case
+        case 'w':
+            game->_(move)(game, WEST);
+            break;
+        case 'a':
+            game->_(attack)(game, damage);
+            break;
+        case 'l':
+            printf("You can go:\n");
+            if(game->location->north) printf("NORTH\n");
+            if(game->location->south) printf("SOUTH\n");
+            if(game->location->east)  printf("EAST\n");
+            if(game->location->west)  printf("WEST\n");
+            break;
+        default:
+            printf("What?: %d\n", ch);
 
     }
+    return 1;
+}
+
+int main(int argc, char *argv[])
+{
+    // simple way to setup the randomness
+    srand(time(NULL));
+
+    //make our map to work with
+    Map *game = NEW(Map, "The Hall of The Minotaur.");
+
+    printf("You enter the ");
+    game->location->_(describe)(game->location);
+
+    while(process_input(game))
+    {
+
+    }
+    return 0;
 }

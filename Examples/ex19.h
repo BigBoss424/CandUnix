@@ -42,7 +42,7 @@ struct Map
 typedef struct Map Map;
 
 void *Map_move(void *self, Direction direction);
-void Map_attack(void *self, int damage);
-void Map_init(void *self);
+int Map_attack(void *self, int damage);
+int Map_init(void *self);
 
 #endif // EX19_H_INCLUDED

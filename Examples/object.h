@@ -14,7 +14,7 @@ typedef struct
     void (*destroy)(void *self);
     void *(*move)(void *self, Direction direction);
     int (*attack)(void *self, int damage);
-}Object;
+} Object;
 
 int Object_init(void *self);
 void Object_destroy(void *self);
