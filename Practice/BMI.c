@@ -16,7 +16,6 @@ int main(int argc, char *argv[])
     //formula for solving BMI
     //mass in kg / height in meters ^ 2 (squared)
 
-    float BMI = kg /(meters * meters);
 
     printf("Your height in m: ");
     scanf("%f", &meters);
@@ -26,6 +25,8 @@ int main(int argc, char *argv[])
     scanf("%d", &kg);
     printf("\n");
 
-    printf("Your BMI is %f", BMI);
+    float BMI = (kg/ (meters * meters));
+
+    printf("Your BMI is %.4f", BMI);
 
 }
