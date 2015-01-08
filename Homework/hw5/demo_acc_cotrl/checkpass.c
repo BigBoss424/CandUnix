@@ -23,7 +23,7 @@ main(void)
   return ok ? 0 : 1;
 }
 
-int readFile()
+/*int readFile()
 {
     char c[1000];
     File *fptr;
@@ -37,7 +37,7 @@ int readFile()
     printf("Data from file: \n%s", c);
     fclose(fptr);
     return 0;
-}
+}*/
 // good homework
 // tell students the encrypted info, and 4 letter pass, hack the passwork
 // read in the file and write back using low level IO

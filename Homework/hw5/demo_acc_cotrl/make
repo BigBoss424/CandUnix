@@ -1,0 +1,4 @@
+CC = gcc
+
+hw5: checkpass.o password.o
+	$(CC) -o hw5 checkpass.c password.c
