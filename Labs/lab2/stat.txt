@@ -1,0 +1,8 @@
+  File: ‘lab2.sh’
+  Size: 22349     	Blocks: 48         IO Block: 4096   regular file
+Device: 806h/2054d	Inode: 7734742     Links: 1
+Access: (0775/-rwxrwxr-x)  Uid: ( 1000/bigboss424)   Gid: ( 1000/bigboss424)
+Access: 2015-01-15 16:55:22.643487088 -0800
+Modify: 2015-01-14 21:49:11.972394303 -0800
+Change: 2015-01-14 21:49:11.972394303 -0800
+ Birth: -
